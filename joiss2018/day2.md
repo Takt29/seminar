@@ -51,6 +51,10 @@
 ## ケース4
 パターン: `^((a*)*bc*b|d*)b*a*$`
 
-- `aabccba`: OK
-- `ddb`: OK
-- `bda`: NG
+- `aabccba` OK
+- `ddb` OK
+- `bda` NG
+- `aaaaabdbbba` OK
+- `dddddbba` OK
+- `aaaadba` NG
+- `bcbba` OK
