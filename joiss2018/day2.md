@@ -32,7 +32,8 @@
 パターン: `^(ab)*c$`
 
 - `abc` OK
-- `ababac` OK
+- `ababac` NG
+- `abababc` OK
 - `abcab` NG
 - `abaab` NG
 - `c` OK
