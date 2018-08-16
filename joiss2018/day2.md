@@ -17,3 +17,40 @@
 - VM命令の実行
 
 ※コンパイルを文字列として出す必要性はないです
+
+## テストケース
+
+## ケース1
+パターン: `^a*b*$`
+
+- `aab` OK
+- `aabbb` NG
+- `bb` OK
+- `ba` NG
+
+## ケース2
+パターン: `^(ab)*c$`
+
+- `abc` OK
+- `ababac` OK
+- `abcab` NG
+- `abaab` NG
+- `c` OK
+- `ac` NG
+
+## ケース3
+パターン: `^(j|i)oi$`
+
+- `joi` OK
+- `ioi` OK
+- `joioi` NG
+- `joioji` NG
+- `ioj` NG
+- `oi` NG
+
+## ケース4
+パターン: `^((a*)*bc*b|d*)b*a*$`
+
+- `aabccba`: OK
+- `ddb`: OK
+- `bda`: NG
