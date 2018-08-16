@@ -3,6 +3,7 @@
 ## ダウンロード
 - [checker.cpp](./file/checker.cpp)
 - [testcase1.txt](./file/testcase1.txt)
+- [testcase2.txt](./file/testcase2.txt)
 
 ## 使い方
 1. checker.cppの`my_regex_match`を完成させる

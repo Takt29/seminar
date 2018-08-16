@@ -79,14 +79,19 @@ int main(int argc, char **argv){
         printf("Text: %s\n", str);
       else
         printf("Text: %.25s...%s(len: %d)\n", str, str + (str_length-25), str_length);
-      
-      int stl_res = stl_regex_match(str, pattern);
 
-      clock_t startTime = clock(), endTime;
+      clock_t startTime, endTime;
+      startTime = clock();
+      int stl_res = stl_regex_match(str, pattern);
+      endTime = clock();
+
+      printf("STL Time: %.2lf[ms]\n", (double)((long long)(endTime-startTime) * 1000) / CLOCKS_PER_SEC);
+
+      startTime = clock();
       int my_res = my_regex_match(str, pattern);
       endTime = clock();
 
-      printf("Time: %.2lf[ms]\n", (double)((endTime-startTime) * 1000) / CLOCKS_PER_SEC);
+      printf("MY Time: %.2lf[ms]\n", (double)((long long)(endTime-startTime) * 1000) / CLOCKS_PER_SEC);
       printf("Status: %s (STL: %d, MY: %d)\n", stl_res == my_res ? "AC" : "WA", stl_res, my_res);
     }
   }
