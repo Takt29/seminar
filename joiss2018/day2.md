@@ -58,3 +58,30 @@
 - `dddddbba` OK
 - `aaaadba` NG
 - `bcbba` OK
+
+## ケース5
+パターン: `^(a|b|c)*bcd$`
+
+- `abcd` OK
+- `babacbcd` OK
+- `bcd` OK
+- `cbcd` OK
+- `abcbabcabcabcbacbacbacbcbacbabcbabcbacbcbd` NG
+- `ababacbabcbcabcabcbcabcbacbcabcbacbcbcbcd` OK
+- `abcabcbabcdcbabcbacbabcbcbabcabcabcbadbcb` NG
+- `bcabcbacbacbabcabcabcabcbcdbcd` NG
+- `bababcbabcbacbcabcbabcbcbabcbcbabcbc` NG
+
+## ケース6
+パターン: `^(bc*d|ef*g|h*i(j*|k)*)$`
+
+- `bccd` OK
+- `efffg` OK
+- `hhijjkj` OK
+- `hhijjkjkk` OK
+- `bccdeg` NG
+- `i` OK
+- `hijjkkji` NG
+- `eg` OK
+- `bcccccccccd` OK
+- `ijjjjjjjjjjkj` OK
