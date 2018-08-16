@@ -54,7 +54,7 @@
 - `aabccba` OK
 - `ddb` OK
 - `bda` NG
-- `aaaaabdbbba` OK
+- `aaaaabdbbba` NG
 - `dddddbba` OK
 - `aaaadba` NG
 - `bcbba` OK
