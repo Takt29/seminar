@@ -1,0 +1,7 @@
+DirectoryIndex index.html
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://seminar.goodbaton.com/$1 [R=301,L]
+<Files ~ "^\.(.*)$|README">
+  deny from all
+</Files>
