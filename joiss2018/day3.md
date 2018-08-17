@@ -30,6 +30,9 @@
 - [正規表現入門 星の高さを求めて](https://www.slideshare.net/sinya8282/ss-32629428)
 今更になって、この本の著者の一人がJOI春の講義に来ていることに気がついた
 
+- [TTPC2015 - P](https://beta.atcoder.jp/contests/ttpc2015/tasks/ttpc2015_p)
+星自由言語に関するAtCoderの問題
+
 
 ## DFA -> 正規表現
 
