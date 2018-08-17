@@ -10,6 +10,14 @@
 - [ABC104-B](https://beta.atcoder.jp/contests/abc104/tasks/abc104_b)
 - [CodeFestival2017Final-A](https://beta.atcoder.jp/contests/cf17-final/tasks/cf17_final_a)
 
+### やれそうなこと
+- キャプチャ(置換ができる)
+- 文脈自由文法(括弧の対応/回文の判定が可能)
+- 強欲, 控えめ
+- 反復補題(理論/証明)
+- 高速化
+- 正規言語の補集合(これも正規言語の条件を満たす)
+
 ## 発表順
 
 1. p
