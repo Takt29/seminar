@@ -28,7 +28,7 @@
 パターン: `^a*b*$`
 
 - `aab` OK
-- `aabbb` NG
+- `aabbb` OK
 - `bb` OK
 - `ba` NG
 
