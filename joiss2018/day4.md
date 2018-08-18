@@ -34,3 +34,12 @@
 - `de` OK
 - `abcdedg` NG
 - `abeaaa` NG
+
+## ケース9
+パターン: `(bc+d$|ef*g[a-z]|h?i(j|k))`
+
+- `effgz` OK
+- `ij` OK
+- `effg` NG
+- `bcdd` NG
+- `reffgz` OK
