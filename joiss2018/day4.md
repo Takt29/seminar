@@ -43,3 +43,6 @@
 - `effg` NG
 - `bcdd` NG
 - `reffgz` OK
+- `bd` NG
+- `bcccccd` OK
+- `efffabcd` OK
