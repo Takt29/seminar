@@ -30,6 +30,9 @@
           <a class="nav-link" href="./day4.html">Day4</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="./day5.html">Day5</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="./checker.html">Checker</a>
         </li>
       </ul>
@@ -43,14 +46,14 @@
        });
        $.get('day3.md', function(data){
          marked.setOptions({
-		       gfm: true,
-		       breaks: true,
-		       latexRender: katex.renderToString.bind(katex),
-	       });
+           gfm: true,
+           breaks: true,
+           latexRender: katex.renderToString.bind(katex),
+         });
          
          document.getElementById('content').innerHTML = marked(data)
        });
-      </script> 
+      </script>
     </div>
   </body>
 </html>
